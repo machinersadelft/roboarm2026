@@ -6,3 +6,6 @@ import duckdb
 # Creates a link to the persistent database file
 db_path = os.path.join("..", "data", "workshop_state.db")
 db = duckdb.connect(db_path)
+
+from src.robot_math import calculate_ik
+# Now students can just call calculate_ik() without seeing the code!
