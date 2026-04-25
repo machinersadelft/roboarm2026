@@ -1,0 +1,10 @@
+[project]
+name = "roboarm-workshop"
+version = "0.1.0"
+dependencies = [
+    "marimo",
+    "duckdb",
+    "numpy",
+    "pandas",
+    "plotly"  # For 3D robot plots
+]
