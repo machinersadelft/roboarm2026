@@ -9,3 +9,15 @@ db = duckdb.connect(db_path)
 
 from src.robot_math import calculate_ik
 # Now students can just call calculate_ik() without seeing the code!
+
+@app.cell
+def footer(mo):
+    return mo.md(
+        f"""
+        ---
+        ### 🚀 Workshop 1 Complete!
+        You've mastered the kinematics. Let's move to control.
+        
+        [**Next: Part 2 - PID Control →**](02_pid_control.py)
+        """
+    )
